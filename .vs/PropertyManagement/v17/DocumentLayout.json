@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\enteties\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\enteties\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\configurations\\propertytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\configurations\\propertytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\configurations\\propertyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\configurations\\propertyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\enteties\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\enteties\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,14 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:12:50.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PropertyTypeConfiguration.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\Configurations\\PropertyTypeConfiguration.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyTypeConfiguration.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\Configurations\\PropertyTypeConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:08:46.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Property.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Enteties\\Property.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Enteties\\Property.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Enteties\\Property.cs",
+              "RelativeToolTip": "PropertyManagement\\Enteties\\Property.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:06:04.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PropertyConfiguration.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:01:29.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserConfigurations.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\UserConfigurations.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\Configurations\\UserConfigurations.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\UserConfigurations.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\Configurations\\UserConfigurations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:58:21.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
               "RelativeDocumentMoniker": "PropertyManagement\\Program.cs",
               "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
               "RelativeToolTip": "PropertyManagement\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T08:00:37.141Z",
+              "WhenOpened": "2025-06-23T12:56:30.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Enteties\\User.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Enteties\\User.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Enteties\\User.cs",
+              "RelativeToolTip": "PropertyManagement\\Enteties\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:54:35.621Z",
               "EditorCaption": ""
             }
           ]
