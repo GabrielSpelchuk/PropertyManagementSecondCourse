@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyCreateDto"
               }
             }
           }
@@ -87,17 +87,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Property"
+                "$ref": "#/components/schemas/PropertyUpdateDto"
               }
             }
           }
@@ -133,13 +133,9 @@
   },
   "components": {
     "schemas": {
-      "Property": {
+      "PropertyCreateDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "title": {
             "type": "string",
             "nullable": true
@@ -156,69 +152,34 @@
             "type": "string",
             "nullable": true
           },
-          "propertyTypeId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "propertyType": {
-            "$ref": "#/components/schemas/PropertyType"
-          },
           "ownerId": {
             "type": "integer",
             "format": "int32"
           },
-          "owner": {
-            "$ref": "#/components/schemas/User"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
+          "propertyTypeId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "PropertyType": {
+      "PropertyUpdateDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "fullName": {
+          "title": {
             "type": "string",
             "nullable": true
           },
-          "email": {
+          "address": {
             "type": "string",
             "nullable": true
           },
-          "passwordHash": {
-            "type": "string",
-            "nullable": true
+          "price": {
+            "type": "number",
+            "format": "double"
           },
-          "role": {
+          "description": {
             "type": "string",
-            "nullable": true
-          },
-          "properties": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Property"
-            },
             "nullable": true
           }
         },

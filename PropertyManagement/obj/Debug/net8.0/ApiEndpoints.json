@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "property",
-        "Type": "PropertyManagement.Enteties.Property",
+        "Name": "dto",
+        "Type": "PropertyManagement.Dtos.PropertyCreateDto",
         "IsRequired": true
       }
     ],
@@ -55,8 +55,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updated",
-        "Type": "PropertyManagement.Enteties.Property",
+        "Name": "dto",
+        "Type": "PropertyManagement.Dtos.PropertyUpdateDto",
         "IsRequired": true
       }
     ],

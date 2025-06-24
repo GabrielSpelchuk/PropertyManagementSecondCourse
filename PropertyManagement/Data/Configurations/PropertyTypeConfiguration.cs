@@ -1,4 +1,4 @@
-﻿using PropertyManagement.Enteties;
+﻿using PropertyManagement.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

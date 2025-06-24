@@ -1,4 +1,4 @@
-﻿namespace PropertyManagement.Enteties
+﻿namespace PropertyManagement.Entities
 {
     public class PropertyType
     {

@@ -1,4 +1,4 @@
-﻿using PropertyManagement.Enteties;
+﻿using PropertyManagement.Entities;
 
 namespace PropertyManagement.Data.Repositories.Interfaces
 {
