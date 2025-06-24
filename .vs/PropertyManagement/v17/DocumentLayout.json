@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\data\\configurations\\propertyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\data\\configurations\\propertyconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T09:31:29.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PropertyConfiguration.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "RelativeToolTip": "PropertyManagement\\Data\\Configurations\\PropertyConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T09:31:13.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
