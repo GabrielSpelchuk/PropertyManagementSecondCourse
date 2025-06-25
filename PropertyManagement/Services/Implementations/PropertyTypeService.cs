@@ -1,0 +1,65 @@
+﻿using AutoMapper;
+using PropertyManagement.Data.Repositories.Interfaces;
+using PropertyManagement.Dtos.PropertyType;
+using PropertyManagement.Entities;
+using PropertyManagement.Services.Interfaces;
+
+namespace PropertyManagement.Services.Implementations
+{
+    public class PropertyTypeService : IPropertyTypeService
+    {
+        private readonly IGenericRepository<PropertyType> _repo;
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
+
+        public PropertyTypeService(IUnitOfWork unitOfWork, IMapper mapper)
+        {
+            _repo = unitOfWork.GetRepository<PropertyType>();
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
+        }
+
+        public async Task<IEnumerable<PropertyTypeReadDto>> GetAllAsync()
+        {
+            var types = await _repo.GetAllAsync();
+            return _mapper.Map<IEnumerable<PropertyTypeReadDto>>(types);
+        }
+
+        public async Task<PropertyTypeReadDto?> GetByIdAsync(int id)
+        {
+            var type = await _repo.GetByIdAsync(id);
+            if (type == null) return null;
+
+            return _mapper.Map<PropertyTypeReadDto>(type);
+        }
+
+        public async Task<PropertyTypeReadDto> CreateAsync(PropertyTypeCreateDto dto)
+        {
+            var type = _mapper.Map<PropertyType>(dto);
+            await _repo.AddAsync(type);
+            await _unitOfWork.SaveAsync();
+            return _mapper.Map<PropertyTypeReadDto>(type);
+        }
+
+        public async Task<bool> UpdateAsync(int id, PropertyTypeUpdateDto dto)
+        {
+            var type = await _repo.GetByIdAsync(id);
+            if (type == null) return false;
+
+            _mapper.Map(dto, type);
+            await _unitOfWork.SaveAsync();
+            return true;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var type = await _repo.GetByIdAsync(id);
+            if (type == null) return false;
+
+            _repo.Remove(type);
+            await _unitOfWork.SaveAsync();
+            return true;
+        }
+
+    }
+}

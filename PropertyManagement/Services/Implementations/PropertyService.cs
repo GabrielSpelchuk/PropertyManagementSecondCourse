@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using PropertyManagement.Data.Repositories.Interfaces;
-using PropertyManagement.Dtos;
+using PropertyManagement.Dtos.Property;
 using PropertyManagement.Entities;
 using PropertyManagement.Services.Interfaces;
 

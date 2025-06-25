@@ -13,6 +13,11 @@ namespace PropertyManagement.Data.Repositories
             Properties = new PropertyRepository(_context);
         }
 
+        public IGenericRepository<T> GetRepository<T>() where T : class
+        {
+            return new GenericRepository<T>(_context);
+        }
+
         public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
         public void Dispose() => _context.Dispose();
     }

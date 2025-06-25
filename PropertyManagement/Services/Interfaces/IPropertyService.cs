@@ -1,4 +1,4 @@
-﻿using PropertyManagement.Dtos;
+﻿using PropertyManagement.Dtos.Property;
 
 namespace PropertyManagement.Services.Interfaces
 {

@@ -1,4 +1,4 @@
-﻿namespace PropertyManagement.Dtos
+﻿namespace PropertyManagement.Dtos.Property
 {
     public class PropertyReadDto
     {

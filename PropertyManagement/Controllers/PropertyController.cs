@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Entities;
-using PropertyManagement.Dtos;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Dtos.Property;
 
 
 namespace PropertyManagement.Controllers

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using PropertyManagement.Dtos;
+using PropertyManagement.Dtos.Property;
 using PropertyManagement.Entities;
 
 namespace PropertyManagement.Mapping
