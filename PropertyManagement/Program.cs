@@ -4,11 +4,20 @@ using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Data.Repositories;
 using PropertyManagement.Services.Implementations;
 using PropertyManagement.Services.Interfaces;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddSwaggerGen(options =>
+{
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
+});
+
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IPropertyRepository, PropertyRepository>();

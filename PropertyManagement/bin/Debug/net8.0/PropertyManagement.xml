@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PropertyManagement</name>
+    </assembly>
+    <members>
+        <member name="T:PropertyManagement.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:PropertyManagement.Migrations.InitialCreateWithMoreData">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreateWithMoreData.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreateWithMoreData.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:PropertyManagement.Migrations.InitialCreateWithMoreData.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

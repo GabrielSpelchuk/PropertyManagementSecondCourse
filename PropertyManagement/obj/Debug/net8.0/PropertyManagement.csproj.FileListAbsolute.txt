@@ -139,3 +139,5 @@ D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\bin\Debug\net8.
 D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\bin\Debug\net8.0\AutoMapper.dll
 D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\bin\Debug\net8.0\PropertyManagement.xml
+D:\Study\2ndCourse\Practic\PropertyManagement\PropertyManagement\obj\Debug\net8.0\PropertyManagement.xml

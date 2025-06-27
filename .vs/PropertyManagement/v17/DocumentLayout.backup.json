@@ -3,81 +3,68 @@
   "WorkspaceRootPath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\implementations\\propertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\implementations\\propertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\propertytypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\propertytypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\interfaces\\ipropertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\interfaces\\ipropertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 200,
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IPropertyTypeService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:19:35.542Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PropertyTypeService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBsAAABEAAAAAAAAAA==",
+              "Title": "PropertyTypeController.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyTypeController.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\PropertyTypeController.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyTypeController.cs",
+              "RelativeToolTip": "PropertyManagement\\Controllers\\PropertyTypeController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwD8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:18:46.902Z",
+              "WhenOpened": "2025-06-27T09:13:55.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA5wC8AAAA4AAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\UserController.cs",
+              "RelativeToolTip": "PropertyManagement\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwD4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T11:17:05.738Z",
+              "WhenOpened": "2025-06-27T09:10:19.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Program.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
-              "RelativeToolTip": "PropertyManagement\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyController.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\PropertyController.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "PropertyManagement\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA5wDgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T10:39:34.154Z",
+              "WhenOpened": "2025-06-27T09:00:51.843Z",
               "EditorCaption": ""
             }
           ]
