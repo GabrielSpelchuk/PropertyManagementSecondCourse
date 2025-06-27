@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.*" />
+    <ProjectReference Include="..\PropertyManagement.DAL\PropertyManagement.DAL.csproj" />
+    <PackageReference Include="AutoMapper" Version="12.*" />
+  </ItemGroup>
+
+</Project>

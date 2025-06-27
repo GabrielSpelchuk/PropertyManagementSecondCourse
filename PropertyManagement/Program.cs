@@ -1,13 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using PropertyManagement.Data;
-using PropertyManagement.Data.Repositories.Interfaces;
-using PropertyManagement.Data.Repositories;
-using PropertyManagement.Services.Implementations;
-using PropertyManagement.Services.Interfaces;
 using System.Reflection;
 using FluentValidation.AspNetCore;
 using FluentValidation;
-using PropertyManagement.Validation.Property;
+using Microsoft.AspNetCore.Builder;
+using PropertyManagement.DAL.Data;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
+using PropertyManagement.BLL.Validation.Property;
+using PropertyManagement.DAL.Repositories.Interfaces;
+using PropertyManagement.DAL.Repositories;
+using PropertyManagement.BLL.Services.Interfaces;
+using PropertyManagement.BLL.Services.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 

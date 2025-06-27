@@ -1,74 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\",
+  "WorkspaceRootPath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\propertytypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\propertytypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagementsecondcourse\\propertymanagement\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\user\\userqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\user\\userqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\user\\userqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\user\\userqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\propertytype\\propertytypequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\propertytype\\propertytypequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\propertytype\\propertytypequeryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\propertytype\\propertytypequeryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\property\\propertyqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\property\\propertyqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\property\\propertyqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\property\\propertyqueryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\validation\\property\\propertycreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\validation\\property\\propertycreatedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagementsecondcourse\\propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\implementations\\propertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\implementations\\propertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\interfaces\\ipropertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\interfaces\\ipropertytypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\implementations\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\implementations\\propertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|d:\\study\\2ndcourse\\practic\\propertymanagement\\propertymanagement\\services\\interfaces\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C8F8BAD-9FCC-433D-A05C-F2011493A177}|PropertyManagement\\PropertyManagement.csproj|solutionrelative:propertymanagement\\services\\interfaces\\ipropertyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,223 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserQueryParameters.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\User\\UserQueryParameters.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\User\\UserQueryParameters.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\User\\UserQueryParameters.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\User\\UserQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\PropertyManagement\\Controllers\\PropertyController.cs",
+              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\PropertyController.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\PropertyManagement\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "PropertyManagement\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:53:41.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserQueryValidator.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\User\\UserQueryValidator.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\User\\UserQueryValidator.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\User\\UserQueryValidator.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\User\\UserQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:55:09.223Z",
+              "WhenOpened": "2025-06-27T13:16:33.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PropertyTypeController.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyTypeController.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\PropertyTypeController.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyTypeController.cs",
-              "RelativeToolTip": "PropertyManagement\\Controllers\\PropertyTypeController.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAADwv3QAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:30:48.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\UserController.cs",
-              "RelativeToolTip": "PropertyManagement\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAcwHIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:32:50.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PropertyController.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyController.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Controllers\\PropertyController.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Controllers\\PropertyController.cs",
-              "RelativeToolTip": "PropertyManagement\\Controllers\\PropertyController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAswHUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:24:09.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PropertyTypeQueryValidator.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryValidator.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryValidator.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryValidator.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T11:08:35.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PropertyTypeQueryParameters.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryParameters.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryParameters.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryParameters.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\PropertyType\\PropertyTypeQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T11:08:06.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PropertyQueryValidator.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyQueryValidator.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\Property\\PropertyQueryValidator.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyQueryValidator.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\Property\\PropertyQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:28:41.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PropertyQueryParameters.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyQueryParameters.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\Property\\PropertyQueryParameters.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyQueryParameters.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\Property\\PropertyQueryParameters.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:07:43.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PropertyCreateDtoValidator.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyCreateDtoValidator.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Validation\\Property\\PropertyCreateDtoValidator.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Validation\\Property\\PropertyCreateDtoValidator.cs",
-              "RelativeToolTip": "PropertyManagement\\Validation\\Property\\PropertyCreateDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:12:56.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
+              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\PropertyManagement\\Program.cs",
               "RelativeDocumentMoniker": "PropertyManagement\\Program.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Program.cs",
+              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\PropertyManagement\\Program.cs",
               "RelativeToolTip": "PropertyManagement\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:35:19.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PropertyTypeService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Implementations\\PropertyTypeService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowEYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T11:13:28.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IPropertyTypeService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Interfaces\\IPropertyTypeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T11:12:33.663Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Interfaces\\IUserService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:57:43.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Implementations\\UserService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowEgAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:58:28.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PropertyService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Implementations\\PropertyService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Implementations\\PropertyService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Implementations\\PropertyService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAswFoAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:33:30.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IPropertyService.cs",
-              "DocumentMoniker": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyService.cs",
-              "RelativeDocumentMoniker": "PropertyManagement\\Services\\Interfaces\\IPropertyService.cs",
-              "ToolTip": "D:\\Study\\2ndCourse\\Practic\\PropertyManagement\\PropertyManagement\\Services\\Interfaces\\IPropertyService.cs",
-              "RelativeToolTip": "PropertyManagement\\Services\\Interfaces\\IPropertyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:47:51.314Z",
+              "WhenOpened": "2025-06-27T13:15:23.95Z",
               "EditorCaption": ""
             }
           ]

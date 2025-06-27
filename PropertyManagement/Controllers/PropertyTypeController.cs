@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PropertyManagement.Dtos.PropertyType;
-using PropertyManagement.Dtos.User;
-using PropertyManagement.Services.Implementations;
-using PropertyManagement.Services.Interfaces;
-using PropertyManagement.Validation.PropertyType;
-using PropertyManagement.Validation.User;
+using PropertyManagement.BLL.Dtos.PropertyType;
+using PropertyManagement.BLL.Services.Interfaces;
+using PropertyManagement.BLL.Validation.PropertyType;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace PropertyManagement.Controllers
 {
