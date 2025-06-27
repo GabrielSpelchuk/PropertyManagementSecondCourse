@@ -5,6 +5,9 @@ using PropertyManagement.Data.Repositories;
 using PropertyManagement.Services.Implementations;
 using PropertyManagement.Services.Interfaces;
 using System.Reflection;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using PropertyManagement.Validation.Property;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +21,9 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
 });
 
+builder.Services.AddValidatorsFromAssemblyContaining<PropertyCreateDtoValidator>();
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IPropertyRepository, PropertyRepository>();

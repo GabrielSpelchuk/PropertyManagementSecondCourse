@@ -1,4 +1,5 @@
 ﻿using PropertyManagement.Dtos.PropertyType;
+using PropertyManagement.Validation.PropertyType;
 
 namespace PropertyManagement.Services.Interfaces
 {
@@ -9,5 +10,6 @@ namespace PropertyManagement.Services.Interfaces
         Task<PropertyTypeReadDto> CreateAsync(PropertyTypeCreateDto dto);
         Task<bool> UpdateAsync(int id, PropertyTypeUpdateDto dto);
         Task<bool> DeleteAsync(int id);
+        Task<IEnumerable<PropertyTypeReadDto>> QueryAsync(PropertyTypeQueryParameters query);
     }
 }

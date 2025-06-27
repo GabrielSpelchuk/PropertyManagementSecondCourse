@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyManagement.Dtos.User;
+using PropertyManagement.Services.Implementations;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Validation.User;
 
 namespace PropertyManagement.Controllers
 {
@@ -98,6 +100,28 @@ namespace PropertyManagement.Controllers
             if (!user) return NotFound();
 
             return NoContent();
+        }
+
+        /// <summary>
+        /// Get paginated user
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns>Paginated properties</returns>
+        /// <response code="204">Paginated successful</response>
+        /// <response code="400">Invalid input</response>
+        [HttpGet("query")]
+        [ProducesResponseType(typeof(IEnumerable<UserReadDto>), 200)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> Query([FromQuery] UserQueryParameters query)
+        {
+            var validator = new UserQueryValidator();
+            var result = validator.Validate(query);
+
+            if (!result.IsValid)
+                return BadRequest();
+
+            var data = await _userService.QueryAsync(query);
+            return Ok(data);
         }
     }
 }

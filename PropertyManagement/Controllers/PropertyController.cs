@@ -3,6 +3,8 @@ using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Entities;
 using PropertyManagement.Services.Interfaces;
 using PropertyManagement.Dtos.Property;
+using PropertyManagement.Validation;
+using PropertyManagement.Validation.Property;
 
 
 namespace PropertyManagement.Controllers
@@ -101,6 +103,28 @@ namespace PropertyManagement.Controllers
             if (!property) return NotFound();
 
             return NoContent();
+        }
+
+        /// <summary>
+        /// Get filtered, sorted and paginated properties
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns>Filtered, sorted, paginated properties</returns>
+        /// <response code="204">Filtered, sorted, paginated successful</response>
+        /// <response code="400">Invalid input</response>
+        [HttpGet("query")]
+        [ProducesResponseType(typeof(IEnumerable<PropertyReadDto>), 200)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> Query([FromQuery] PropertyQueryParameters query)
+        {
+            var validator = new PropertyQueryValidator();
+            var result = validator.Validate(query);
+
+            if (!result.IsValid)
+                return BadRequest();
+
+            var data = await _propertyService.QueryAsync(query);
+            return Ok(data);
         }
     }
 }

@@ -20,7 +20,9 @@
         "tags": [
           "Property"
         ],
+        "summary": "Create a new property",
         "requestBody": {
+          "description": "New property data",
           "content": {
             "application/json": {
               "schema": {
@@ -41,7 +43,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Property created successfylly",
             "content": {
               "text/plain": {
                 "schema": {
@@ -79,6 +81,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Invalid input data"
           }
         }
       }
@@ -88,10 +93,12 @@
         "tags": [
           "Property"
         ],
+        "summary": "Get a property by ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Property ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -101,7 +108,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Return the property",
             "content": {
               "text/plain": {
                 "schema": {
@@ -121,7 +128,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "If the property is not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -146,10 +153,12 @@
         "tags": [
           "Property"
         ],
+        "summary": "Update a property",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID of the property to update",
             "required": true,
             "schema": {
               "type": "integer",
@@ -158,6 +167,7 @@
           }
         ],
         "requestBody": {
+          "description": "Updated data",
           "content": {
             "application/json": {
               "schema": {
@@ -178,10 +188,10 @@
         },
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Updated successful"
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid input",
             "content": {
               "text/plain": {
                 "schema": {
@@ -201,7 +211,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "Property not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -226,10 +236,12 @@
         "tags": [
           "Property"
         ],
+        "summary": "Delete a property",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Id of the property",
             "required": true,
             "schema": {
               "type": "integer",
@@ -239,10 +251,10 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Delete successful"
           },
           "404": {
-            "description": "Not Found",
+            "description": "Property not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -264,6 +276,131 @@
         }
       }
     },
+    "/api/Property/query": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Get filtered, sorted and paginated properties",
+        "parameters": [
+          {
+            "name": "Keyword",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PropertyTypeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "MinPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "MaxPrice",
+            "in": "query",
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "SortBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SortDescending",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyReadDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyReadDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyReadDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Filtered, sorted, paginated successful"
+          }
+        }
+      }
+    },
     "/api/PropertyType": {
       "get": {
         "tags": [
@@ -279,7 +416,9 @@
         "tags": [
           "PropertyType"
         ],
+        "summary": "Create a new property type",
         "requestBody": {
+          "description": "New property type data",
           "content": {
             "application/json": {
               "schema": {
@@ -300,7 +439,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Property type created successfylly",
             "content": {
               "text/plain": {
                 "schema": {
@@ -320,7 +459,7 @@
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid input data",
             "content": {
               "text/plain": {
                 "schema": {
@@ -347,10 +486,12 @@
         "tags": [
           "PropertyType"
         ],
+        "summary": "Get a property type by ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Property type ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -360,7 +501,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Return the property type",
             "content": {
               "text/plain": {
                 "schema": {
@@ -380,7 +521,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "If the property type is not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -405,10 +546,12 @@
         "tags": [
           "PropertyType"
         ],
+        "summary": "Update a property type",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID of the property type to update",
             "required": true,
             "schema": {
               "type": "integer",
@@ -417,6 +560,7 @@
           }
         ],
         "requestBody": {
+          "description": "Updated data",
           "content": {
             "application/json": {
               "schema": {
@@ -437,10 +581,10 @@
         },
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Updated successful"
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid input",
             "content": {
               "text/plain": {
                 "schema": {
@@ -460,7 +604,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "Property type not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -485,10 +629,12 @@
         "tags": [
           "PropertyType"
         ],
+        "summary": "Delete a property type",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Id of the property type",
             "required": true,
             "schema": {
               "type": "integer",
@@ -498,10 +644,10 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Delete successful"
           },
           "404": {
-            "description": "Not Found",
+            "description": "Property type not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -523,6 +669,86 @@
         }
       }
     },
+    "/api/PropertyType/query": {
+      "get": {
+        "tags": [
+          "PropertyType"
+        ],
+        "summary": "Get paginated property type",
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyTypeReadDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyTypeReadDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyTypeReadDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Paginated successful"
+          }
+        }
+      }
+    },
     "/api/User": {
       "get": {
         "tags": [
@@ -538,7 +764,9 @@
         "tags": [
           "User"
         ],
+        "summary": "Create a new user",
         "requestBody": {
+          "description": "New user data",
           "content": {
             "application/json": {
               "schema": {
@@ -559,7 +787,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "User created successfylly",
             "content": {
               "text/plain": {
                 "schema": {
@@ -579,7 +807,7 @@
             }
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid input data",
             "content": {
               "text/plain": {
                 "schema": {
@@ -606,10 +834,12 @@
         "tags": [
           "User"
         ],
+        "summary": "Get a user by ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "User ID",
             "required": true,
             "schema": {
               "type": "integer",
@@ -619,7 +849,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Return the user",
             "content": {
               "text/plain": {
                 "schema": {
@@ -639,7 +869,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "If the user is not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -664,10 +894,12 @@
         "tags": [
           "User"
         ],
+        "summary": "Update a user",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID of the user to update",
             "required": true,
             "schema": {
               "type": "integer",
@@ -676,6 +908,7 @@
           }
         ],
         "requestBody": {
+          "description": "Updated data",
           "content": {
             "application/json": {
               "schema": {
@@ -696,10 +929,10 @@
         },
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Updated successful"
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Invalid input",
             "content": {
               "text/plain": {
                 "schema": {
@@ -719,7 +952,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "User not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -744,10 +977,12 @@
         "tags": [
           "User"
         ],
+        "summary": "Delete a user",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Id of the user",
             "required": true,
             "schema": {
               "type": "integer",
@@ -757,10 +992,10 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Delete successful"
           },
           "404": {
-            "description": "Not Found",
+            "description": "User not found",
             "content": {
               "text/plain": {
                 "schema": {
@@ -778,6 +1013,86 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/User/query": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Get paginated user",
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserReadDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserReadDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserReadDto"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Paginated successful"
           }
         }
       }
@@ -959,7 +1274,8 @@
           },
           "email": {
             "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "format": "email"
           },
           "passwordHash": {
             "minLength": 1,

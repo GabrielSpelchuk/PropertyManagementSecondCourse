@@ -5,6 +5,7 @@ using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Dtos.User;
 using PropertyManagement.Entities;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Validation.User;
 
 namespace PropertyManagement.Services.Implementations
 {
@@ -61,6 +62,15 @@ namespace PropertyManagement.Services.Implementations
             _userRepo.Remove(user);
             await _unitOfWork.SaveAsync();
             return true;
+        }
+
+        public async Task<IEnumerable<UserReadDto>> QueryAsync(UserQueryParameters query)
+        {
+            var data = await _userRepo.GetAllAsync();
+
+            data = data.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize);
+
+            return _mapper.Map<IEnumerable<UserReadDto>>(data);
         }
     }
 }

@@ -3,6 +3,7 @@ using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Dtos.PropertyType;
 using PropertyManagement.Entities;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Validation.PropertyType;
 
 namespace PropertyManagement.Services.Implementations
 {
@@ -59,6 +60,15 @@ namespace PropertyManagement.Services.Implementations
             _repo.Remove(type);
             await _unitOfWork.SaveAsync();
             return true;
+        }
+
+        public async Task<IEnumerable<PropertyTypeReadDto>> QueryAsync(PropertyTypeQueryParameters query)
+        {
+            var data = await _repo.GetAllAsync();
+
+            data = data.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize);
+
+            return _mapper.Map<IEnumerable<PropertyTypeReadDto>>(data);
         }
 
     }

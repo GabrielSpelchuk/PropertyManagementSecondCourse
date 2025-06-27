@@ -4,6 +4,147 @@
         <name>PropertyManagement</name>
     </assembly>
     <members>
+        <member name="M:PropertyManagement.Controllers.PropertyController.Get(System.Int32)">
+            <summary>
+            Get a property by ID
+            </summary>
+            <param name="id">Property ID</param>
+            <returns>Property details</returns>
+            <response code="200">Return the property</response>
+            <response code="404">If the property is not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyController.Create(PropertyManagement.Dtos.Property.PropertyCreateDto)">
+            <summary>
+            Create a new property
+            </summary>
+            <param name="dto">New property data</param>
+            <returns>Created property</returns>
+            <response code="201">Property created successfylly</response>
+            <response code="400">Invalid input data</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyController.Update(System.Int32,PropertyManagement.Dtos.Property.PropertyUpdateDto)">
+            <summary>
+            Update a property
+            </summary>
+            <param name="id">ID of the property to update</param>
+            <param name="dto">Updated data</param>
+            <returns>No content</returns>
+            <response code="204">Updated successful</response>
+            <response code="404">Property not found</response>
+            <response code="400">Invalid input</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyController.Delete(System.Int32)">
+            <summary>
+            Delete a property
+            </summary>
+            <param name="id">Id of the property</param>
+            <returns>No content</returns>
+            <response code="204">Delete successful</response>
+            <response code="404">Property not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyController.Query(PropertyManagement.Validation.Property.PropertyQueryParameters)">
+            <summary>
+            Get filtered, sorted and paginated properties
+            </summary>
+            <param name="query"></param>
+            <returns>Filtered, sorted, paginated properties</returns>
+            <response code="204">Filtered, sorted, paginated successful</response>
+            <response code="400">Invalid input</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Get(System.Int32)">
+            <summary>
+            Get a property type by ID
+            </summary>
+            <param name="id">Property type ID</param>
+            <returns>Property type details</returns>
+            <response code="200">Return the property type</response>
+            <response code="404">If the property type is not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Create(PropertyManagement.Dtos.PropertyType.PropertyTypeCreateDto)">
+            <summary>
+            Create a new property type
+            </summary>
+            <param name="dto">New property type data</param>
+            <returns>Created property type</returns>
+            <response code="201">Property type created successfylly</response>
+            <response code="400">Invalid input data</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Update(System.Int32,PropertyManagement.Dtos.PropertyType.PropertyTypeUpdateDto)">
+            <summary>
+            Update a property type
+            </summary>
+            <param name="id">ID of the property type to update</param>
+            <param name="dto">Updated data</param>
+            <returns>No content</returns>
+            <response code="204">Updated successful</response>
+            <response code="404">Property type not found</response>
+            <response code="400">Invalid input</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Delete(System.Int32)">
+            <summary>
+            Delete a property type
+            </summary>
+            <param name="id">Id of the property type</param>
+            <returns>No content</returns>
+            <response code="204">Delete successful</response>
+            <response code="404">Property type not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Query(PropertyManagement.Validation.PropertyType.PropertyTypeQueryParameters)">
+            <summary>
+            Get paginated property type
+            </summary>
+            <param name="query"></param>
+            <returns>Paginated property types</returns>
+            <response code="204">Paginated successful</response>
+            <response code="400">Invalid input</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Get a user by ID
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User details</returns>
+            <response code="200">Return the user</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.UserController.Create(PropertyManagement.Dtos.User.UserCreateDto)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="dto">New user data</param>
+            <returns>Created user</returns>
+            <response code="201">User created successfylly</response>
+            <response code="400">Invalid input data</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.UserController.Update(System.Int32,PropertyManagement.Dtos.User.UserUpdateDto)">
+            <summary>
+            Update a user
+            </summary>
+            <param name="id">ID of the user to update</param>
+            <param name="dto">Updated data</param>
+            <returns>No content</returns>
+            <response code="204">Updated successful</response>
+            <response code="404">User not found</response>
+            <response code="400">Invalid input</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Delete a user
+            </summary>
+            <param name="id">Id of the user</param>
+            <returns>No content</returns>
+            <response code="204">Delete successful</response>
+            <response code="404">User not found</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.UserController.Query(PropertyManagement.Validation.User.UserQueryParameters)">
+            <summary>
+            Get paginated user
+            </summary>
+            <param name="query"></param>
+            <returns>Paginated properties</returns>
+            <response code="204">Paginated successful</response>
+            <response code="400">Invalid input</response>
+        </member>
         <member name="T:PropertyManagement.Migrations.InitialCreate">
             <inheritdoc />
         </member>

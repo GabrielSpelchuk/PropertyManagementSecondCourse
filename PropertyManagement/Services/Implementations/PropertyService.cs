@@ -3,6 +3,7 @@ using PropertyManagement.Data.Repositories.Interfaces;
 using PropertyManagement.Dtos.Property;
 using PropertyManagement.Entities;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Validation.Property;
 
 namespace PropertyManagement.Services.Implementations
 {
@@ -61,5 +62,34 @@ namespace PropertyManagement.Services.Implementations
             await _unitOfWork.SaveAsync();
             return true;
         }
+
+
+        public async Task<IEnumerable<PropertyReadDto>> QueryAsync(PropertyQueryParameters query)
+        {
+            var data = await _unitOfWork.Properties.GetAllAsync();
+
+            if (!string.IsNullOrWhiteSpace(query.Keyword))
+                data = data.Where(p => p.Title.Contains(query.Keyword, StringComparison.OrdinalIgnoreCase));
+
+            if (query.PropertyTypeId.HasValue)
+                data = data.Where(p => p.PropertyTypeId == query.PropertyTypeId);
+
+            if (query.MinPrice.HasValue)
+                data = data.Where(p => p.Price >= query.MinPrice.Value);
+
+            if (query.MaxPrice.HasValue)
+                data = data.Where(p => p.Price <= query.MaxPrice.Value);
+
+            data = query.SortBy?.ToLower() switch
+            {
+                "title" => query.SortDescending ? data.OrderByDescending(p => p.Title) : data.OrderBy(p => p.Title),
+                _ => query.SortDescending ? data.OrderByDescending(p => p.Price) : data.OrderBy(p => p.Price)
+            };
+
+            data = data.Skip((query.Page - 1) * query.PageSize).Take(query.PageSize);
+
+            return _mapper.Map<IEnumerable<PropertyReadDto>>(data);
+        }
+
     }
 }

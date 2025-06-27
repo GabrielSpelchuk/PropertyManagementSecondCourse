@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyManagement.Dtos.PropertyType;
+using PropertyManagement.Dtos.User;
+using PropertyManagement.Services.Implementations;
 using PropertyManagement.Services.Interfaces;
+using PropertyManagement.Validation.PropertyType;
+using PropertyManagement.Validation.User;
 
 namespace PropertyManagement.Controllers
 {
@@ -98,6 +102,28 @@ namespace PropertyManagement.Controllers
             if (!type) return NotFound();
 
             return NoContent();
+        }
+
+        /// <summary>
+        /// Get paginated property type
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns>Paginated property types</returns>
+        /// <response code="204">Paginated successful</response>
+        /// <response code="400">Invalid input</response>
+        [HttpGet("query")]
+        [ProducesResponseType(typeof(IEnumerable<PropertyTypeReadDto>), 200)]
+        [ProducesResponseType(400)]
+        public async Task<IActionResult> Query([FromQuery] PropertyTypeQueryParameters query)
+        {
+            var validator = new PropertyTypeQueryValidator();
+            var result = validator.Validate(query);
+
+            if (!result.IsValid)
+                return BadRequest();
+
+            var data = await _typeService.QueryAsync(query);
+            return Ok(data);
         }
     }
 }
