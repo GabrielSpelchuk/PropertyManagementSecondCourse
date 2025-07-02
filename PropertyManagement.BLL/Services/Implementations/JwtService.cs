@@ -122,10 +122,20 @@ namespace PropertyManagement.BLL.Services.Implementations
 
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             var link = $"{_config["App:BaseUrl"]}/reset-password?email={email}&token={Uri.EscapeDataString(token)}";
-            Console.WriteLine($"Reset link: {link}");
+
+            await _emailSender.SendEmailAsync(
+                    user.Email!,
+                    "Reset your password",
+                    $@"
+                <p>You requested a password reset.</p>
+                <p>Use the following token:</p>
+                <p><strong>{token}</strong></p>
+                <p>Send it via POST to /api/auth/reset-password with your email and new password.</p>"
+                );
 
             return true;
         }
+
 
         public async Task<bool> ResetPasswordAsync(string email, string token, string newPassword)
         {

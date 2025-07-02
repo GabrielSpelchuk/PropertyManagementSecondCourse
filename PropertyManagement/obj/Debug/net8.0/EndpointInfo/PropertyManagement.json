@@ -10,7 +10,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Register a new user.",
         "requestBody": {
+          "description": "User registration data",
           "content": {
             "application/json": {
               "schema": {
@@ -30,8 +32,28 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "User created successfully"
+          },
+          "400": {
+            "description": "Invalid data",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -41,10 +63,12 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Confirm user email.",
         "parameters": [
           {
             "name": "userId",
             "in": "query",
+            "description": "User ID",
             "schema": {
               "type": "string"
             }
@@ -52,6 +76,7 @@
           {
             "name": "token",
             "in": "query",
+            "description": "Email confirmation token",
             "schema": {
               "type": "string"
             }
@@ -60,6 +85,26 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -69,7 +114,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Log in an existing user.",
         "requestBody": {
+          "description": "Login credentials",
           "content": {
             "application/json": {
               "schema": {
@@ -91,6 +138,26 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -100,7 +167,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Refresh access token using refresh token.",
         "requestBody": {
+          "description": "Refresh token pair",
           "content": {
             "application/json": {
               "schema": {
@@ -122,6 +191,26 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -131,7 +220,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Request password reset link.",
         "requestBody": {
+          "description": "User email",
           "content": {
             "application/json": {
               "schema": {
@@ -153,6 +244,26 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -162,7 +273,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Reset user password.",
         "requestBody": {
+          "description": "Reset password data",
           "content": {
             "application/json": {
               "schema": {
@@ -184,6 +297,26 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -193,6 +326,7 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Get authenticated user info.",
         "responses": {
           "200": {
             "description": "OK"
@@ -205,6 +339,7 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Log out current user.",
         "responses": {
           "200": {
             "description": "OK"
@@ -269,8 +404,8 @@
               }
             }
           },
-          "404": {
-            "description": "Not Found",
+          "400": {
+            "description": "Invalid input data",
             "content": {
               "text/plain": {
                 "schema": {
@@ -288,9 +423,6 @@
                 }
               }
             }
-          },
-          "400": {
-            "description": "Invalid input data"
           }
         }
       }
@@ -554,7 +686,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Filtered, sorted, paginated successful",
             "content": {
               "text/plain": {
                 "schema": {
@@ -601,9 +733,6 @@
                 }
               }
             }
-          },
-          "204": {
-            "description": "Filtered, sorted, paginated successful"
           }
         }
       }

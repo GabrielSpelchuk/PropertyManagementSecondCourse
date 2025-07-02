@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Threading.Tasks;
+using PropertyManagement.BLL.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -127,6 +128,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Property Management API V1");
 });
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();

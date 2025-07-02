@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyManagement.BLL.Dtos.PropertyType;
+using PropertyManagement.BLL.Exceptions;
 using PropertyManagement.BLL.Services.Interfaces;
 using PropertyManagement.BLL.Validation.PropertyType;
 using System.Collections.Generic;
@@ -37,7 +38,8 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var type = await _typeService.GetByIdAsync(id);
-            if (type == null) return NotFound();
+            if (type == null)
+                throw new NotFoundException($"Property type with ID {id} not found");
 
             return Ok(type);
         }
@@ -55,7 +57,7 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Create([FromBody] PropertyTypeCreateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid property type data");
 
             var created = await _typeService.CreateAsync(dto);
             return CreatedAtAction(nameof(Get), new {id = created.Id}, created);
@@ -77,10 +79,11 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] PropertyTypeUpdateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid property type update data");
 
             var type = await _typeService.UpdateAsync(id, dto);
-            if (!type) return NotFound();
+            if (!type)
+                throw new NotFoundException($"Property type with ID {id} not found");
 
             return NoContent();
         }
@@ -98,7 +101,8 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var type = await _typeService.DeleteAsync(id);
-            if (!type) return NotFound();
+            if (!type)
+                throw new NotFoundException($"Property type with ID {id} not found");
 
             return NoContent();
         }
@@ -119,7 +123,7 @@ namespace PropertyManagement.Controllers
             var result = validator.Validate(query);
 
             if (!result.IsValid)
-                return BadRequest();
+                throw new BadRequestException("Invalid query parameters");
 
             var data = await _typeService.QueryAsync(query);
             return Ok(data);

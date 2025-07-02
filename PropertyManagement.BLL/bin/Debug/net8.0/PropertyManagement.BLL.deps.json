@@ -9,6 +9,7 @@
       "PropertyManagement.BLL/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Bugsnag": "4.0.0",
           "FluentValidation.AspNetCore": "11.3.1",
           "PropertyManagement.DAL": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.12.1"
@@ -25,6 +26,14 @@
           "lib/netstandard2.1/AutoMapper.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "Bugsnag/4.0.0": {
+        "runtime": {
+          "lib/net6.0/Bugsnag.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
@@ -828,6 +837,13 @@
       "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
       "path": "automapper/12.0.1",
       "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
+    "Bugsnag/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lLOMGzIMZG9K8Lr0y6UN4uHQBxQ9hzpz5rZm/8fMH1Qxcq5VocubCzjm84oneSi3OBDEMToghbZrNcaJNASCgQ==",
+      "path": "bugsnag/4.0.0",
+      "hashPath": "bugsnag.4.0.0.nupkg.sha512"
     },
     "FluentValidation/11.11.0": {
       "type": "package",

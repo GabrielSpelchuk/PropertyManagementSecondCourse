@@ -18,6 +18,19 @@
           }
         }
       },
+      "Bugsnag/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Bugsnag.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Bugsnag.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FluentValidation/11.11.0": {
         "type": "package",
         "compile": {
@@ -1266,6 +1279,24 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "Bugsnag/4.0.0": {
+      "sha512": "lLOMGzIMZG9K8Lr0y6UN4uHQBxQ9hzpz5rZm/8fMH1Qxcq5VocubCzjm84oneSi3OBDEMToghbZrNcaJNASCgQ==",
+      "type": "package",
+      "path": "bugsnag/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bugsnag.4.0.0.nupkg.sha512",
+        "bugsnag.nuspec",
+        "bugsnag.png",
+        "lib/net462/Bugsnag.dll",
+        "lib/net462/Bugsnag.xml",
+        "lib/net6.0/Bugsnag.dll",
+        "lib/net6.0/Bugsnag.xml",
+        "lib/netstandard2.0/Bugsnag.dll",
+        "lib/netstandard2.0/Bugsnag.xml"
       ]
     },
     "FluentValidation/11.11.0": {
@@ -3195,6 +3226,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 12.*",
+      "Bugsnag >= 4.0.0",
       "FluentValidation.AspNetCore >= 11.*",
       "PropertyManagement.DAL >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 8.12.1"
@@ -3257,6 +3289,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[12.*, )"
+          },
+          "Bugsnag": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           },
           "FluentValidation.AspNetCore": {
             "target": "Package",

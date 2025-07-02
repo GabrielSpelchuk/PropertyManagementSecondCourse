@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PropertyManagement.BLL.Dtos.User;
+using PropertyManagement.BLL.Exceptions;
 using PropertyManagement.BLL.Services.Interfaces;
 using PropertyManagement.BLL.Validation.User;
 using System.Collections.Generic;
@@ -37,7 +38,8 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var user = await _userService.GetByIdAsync(id);
-            if (user == null) return NotFound();
+            if (user == null)
+                throw new NotFoundException($"User with ID {id} not found");
 
             return Ok(user);
         }
@@ -55,7 +57,7 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Create([FromBody] UserCreateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid user data");
 
             var created = await _userService.CreateAsync(dto);
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
@@ -77,10 +79,12 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] UserUpdateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid property update data");
 
             var user = await _userService.UpdateAsync(id, dto);
-            if (!user) return NotFound();
+            if (!user)
+                throw new NotFoundException($"User with ID {id} not found");
+
 
             return NoContent();
         }
@@ -98,7 +102,8 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var user = await _userService.DeleteAsync(id);
-            if (!user) return NotFound();
+            if (!user)
+                throw new NotFoundException($"User with ID {id} not found");
 
             return NoContent();
         }
@@ -119,7 +124,7 @@ namespace PropertyManagement.Controllers
             var result = validator.Validate(query);
 
             if (!result.IsValid)
-                return BadRequest();
+                throw new BadRequestException("Invalid query parameters");
 
             var data = await _userService.QueryAsync(query);
             return Ok(data);

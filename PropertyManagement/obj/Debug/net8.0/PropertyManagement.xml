@@ -4,6 +4,63 @@
         <name>PropertyManagement</name>
     </assembly>
     <members>
+        <member name="M:PropertyManagement.Controllers.AuthController.Register(PropertyManagement.BLL.Dtos.Auth.RegisterDto)">
+            <summary>
+            Register a new user.
+            </summary>
+            <param name="dto">User registration data</param>
+            <returns>201 Created if successful</returns>
+            <response code="201">User created successfully</response>
+            <response code="400">Invalid data</response>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.ConfirmEmail(System.String,System.String)">
+            <summary>
+            Confirm user email.
+            </summary>
+            <param name="userId">User ID</param>
+            <param name="token">Email confirmation token</param>
+            <returns>200 OK if confirmed</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.Login(PropertyManagement.BLL.Dtos.Auth.LoginDto)">
+            <summary>
+            Log in an existing user.
+            </summary>
+            <param name="dto">Login credentials</param>
+            <returns>Access and Refresh tokens</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.Refresh(PropertyManagement.BLL.Dtos.Auth.RefreshDto)">
+            <summary>
+            Refresh access token using refresh token.
+            </summary>
+            <param name="dto">Refresh token pair</param>
+            <returns>New token pair</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.ForgotPassword(PropertyManagement.BLL.Dtos.Auth.ForgotPasswordDto)">
+            <summary>
+            Request password reset link.
+            </summary>
+            <param name="dto">User email</param>
+            <returns>200 OK if found</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.ResetPassword(PropertyManagement.BLL.Dtos.Auth.ResetPasswordDto)">
+            <summary>
+            Reset user password.
+            </summary>
+            <param name="dto">Reset password data</param>
+            <returns>200 OK if success</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.Me">
+            <summary>
+            Get authenticated user info.
+            </summary>
+            <returns>User info</returns>
+        </member>
+        <member name="M:PropertyManagement.Controllers.AuthController.Logout">
+            <summary>
+            Log out current user.
+            </summary>
+            <returns>200 OK</returns>
+        </member>
         <member name="M:PropertyManagement.Controllers.PropertyController.Get(System.Int32)">
             <summary>
             Get a property by ID
@@ -48,7 +105,7 @@
             </summary>
             <param name="query"></param>
             <returns>Filtered, sorted, paginated properties</returns>
-            <response code="204">Filtered, sorted, paginated successful</response>
+            <response code="200">Filtered, sorted, paginated successful</response>
             <response code="400">Invalid input</response>
         </member>
         <member name="M:PropertyManagement.Controllers.PropertyTypeController.Get(System.Int32)">

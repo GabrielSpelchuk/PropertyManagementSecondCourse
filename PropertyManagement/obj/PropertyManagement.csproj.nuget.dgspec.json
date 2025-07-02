@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[12.*, )"
             },
+            "Bugsnag": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.*, )"

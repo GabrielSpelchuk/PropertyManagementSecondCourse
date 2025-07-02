@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using PropertyManagement.BLL.Dtos.Property;
 using System.Collections.Generic;
 using PropertyManagement.BLL.Validation.Property;
+using PropertyManagement.BLL.Exceptions;
 
 
 namespace PropertyManagement.Controllers
@@ -39,7 +40,9 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var properties = await _propertyService.GetByIdAsync(id);
-            if (properties == null) return NotFound();
+            if (properties == null)
+                throw new NotFoundException($"Property with ID {id} not found");
+
             return Ok(properties);
         }
 
@@ -52,11 +55,11 @@ namespace PropertyManagement.Controllers
         /// <response code="400">Invalid input data</response>
         [HttpPost]
         [ProducesResponseType(typeof(PropertyReadDto), 201)]
-        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
         public async Task<IActionResult> Create([FromBody] PropertyCreateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid property data");
 
             var created = await _propertyService.CreateAsync(dto);
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
@@ -78,10 +81,11 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] PropertyUpdateDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                throw new BadRequestException("Invalid property update data");
 
             var property = await _propertyService.UpdateAsync(id, dto);
-            if (!property) return NotFound();
+            if (!property)
+                throw new NotFoundException($"Property with ID {id} not found");
 
             return NoContent();
         }
@@ -99,7 +103,8 @@ namespace PropertyManagement.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var property = await _propertyService.DeleteAsync(id);
-            if (!property) return NotFound();
+            if (!property)
+                throw new NotFoundException($"Property with ID {id} not found");
 
             return NoContent();
         }
@@ -109,7 +114,7 @@ namespace PropertyManagement.Controllers
         /// </summary>
         /// <param name="query"></param>
         /// <returns>Filtered, sorted, paginated properties</returns>
-        /// <response code="204">Filtered, sorted, paginated successful</response>
+        /// <response code="200">Filtered, sorted, paginated successful</response>
         /// <response code="400">Invalid input</response>
         [HttpGet("query")]
         [ProducesResponseType(typeof(IEnumerable<PropertyReadDto>), 200)]
@@ -120,7 +125,7 @@ namespace PropertyManagement.Controllers
             var result = validator.Validate(query);
 
             if (!result.IsValid)
-                return BadRequest();
+                throw new BadRequestException("Invalid query parameters");
 
             var data = await _propertyService.QueryAsync(query);
             return Ok(data);

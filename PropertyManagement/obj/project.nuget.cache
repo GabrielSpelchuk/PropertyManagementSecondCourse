@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VvozW2gKPWw=",
+  "dgSpecHash": "/HdBzaZQDys=",
   "success": true,
   "projectFilePath": "D:\\Study\\2ndCourse\\Practic\\PropertyManagementSecondCourse\\PropertyManagement\\PropertyManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\bugsnag\\4.0.0\\bugsnag.4.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
