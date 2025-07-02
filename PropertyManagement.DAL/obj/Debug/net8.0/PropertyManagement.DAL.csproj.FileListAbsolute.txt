@@ -1,0 +1,15 @@
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.csproj.AssemblyReference.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.AssemblyInfoInputs.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.AssemblyInfo.cs
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.csproj.CoreCompileInputs.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.sourcelink.json
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\bin\Debug\net8.0\PropertyManagement.DAL.deps.json
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\bin\Debug\net8.0\PropertyManagement.DAL.runtimeconfig.json
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\bin\Debug\net8.0\PropertyManagement.DAL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\bin\Debug\net8.0\PropertyManagement.DAL.pdb
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\refint\PropertyManagement.DAL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.pdb
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\PropertyManagement.DAL.genruntimeconfig.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.DAL\obj\Debug\net8.0\ref\PropertyManagement.DAL.dll

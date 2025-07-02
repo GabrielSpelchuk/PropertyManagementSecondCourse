@@ -1,0 +1,16 @@
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\bin\Debug\net8.0\PropertyManagement.BLL.deps.json
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\bin\Debug\net8.0\PropertyManagement.BLL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\bin\Debug\net8.0\PropertyManagement.BLL.pdb
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\bin\Debug\net8.0\PropertyManagement.DAL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\bin\Debug\net8.0\PropertyManagement.DAL.pdb
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.csproj.AssemblyReference.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.AssemblyInfoInputs.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.AssemblyInfo.cs
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.csproj.CoreCompileInputs.cache
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.sourcelink.json
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\Property.38A7B4D9.Up2Date
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\refint\PropertyManagement.BLL.dll
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\PropertyManagement.BLL.pdb
+D:\Study\2ndCourse\Practic\PropertyManagementSecondCourse\PropertyManagement.BLL\obj\Debug\net8.0\ref\PropertyManagement.BLL.dll

@@ -13,7 +13,7 @@
             <response code="200">Return the property</response>
             <response code="404">If the property is not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyController.Create(PropertyManagement.Dtos.Property.PropertyCreateDto)">
+        <member name="M:PropertyManagement.Controllers.PropertyController.Create(PropertyManagement.BLL.Dtos.Property.PropertyCreateDto)">
             <summary>
             Create a new property
             </summary>
@@ -22,7 +22,7 @@
             <response code="201">Property created successfylly</response>
             <response code="400">Invalid input data</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyController.Update(System.Int32,PropertyManagement.Dtos.Property.PropertyUpdateDto)">
+        <member name="M:PropertyManagement.Controllers.PropertyController.Update(System.Int32,PropertyManagement.BLL.Dtos.Property.PropertyUpdateDto)">
             <summary>
             Update a property
             </summary>
@@ -42,7 +42,7 @@
             <response code="204">Delete successful</response>
             <response code="404">Property not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyController.Query(PropertyManagement.Validation.Property.PropertyQueryParameters)">
+        <member name="M:PropertyManagement.Controllers.PropertyController.Query(PropertyManagement.BLL.Validation.Property.PropertyQueryParameters)">
             <summary>
             Get filtered, sorted and paginated properties
             </summary>
@@ -60,7 +60,7 @@
             <response code="200">Return the property type</response>
             <response code="404">If the property type is not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Create(PropertyManagement.Dtos.PropertyType.PropertyTypeCreateDto)">
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Create(PropertyManagement.BLL.Dtos.PropertyType.PropertyTypeCreateDto)">
             <summary>
             Create a new property type
             </summary>
@@ -69,7 +69,7 @@
             <response code="201">Property type created successfylly</response>
             <response code="400">Invalid input data</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Update(System.Int32,PropertyManagement.Dtos.PropertyType.PropertyTypeUpdateDto)">
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Update(System.Int32,PropertyManagement.BLL.Dtos.PropertyType.PropertyTypeUpdateDto)">
             <summary>
             Update a property type
             </summary>
@@ -89,7 +89,7 @@
             <response code="204">Delete successful</response>
             <response code="404">Property type not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Query(PropertyManagement.Validation.PropertyType.PropertyTypeQueryParameters)">
+        <member name="M:PropertyManagement.Controllers.PropertyTypeController.Query(PropertyManagement.BLL.Validation.PropertyType.PropertyTypeQueryParameters)">
             <summary>
             Get paginated property type
             </summary>
@@ -107,7 +107,7 @@
             <response code="200">Return the user</response>
             <response code="404">If the user is not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.UserController.Create(PropertyManagement.Dtos.User.UserCreateDto)">
+        <member name="M:PropertyManagement.Controllers.UserController.Create(PropertyManagement.BLL.Dtos.User.UserCreateDto)">
             <summary>
             Create a new user
             </summary>
@@ -116,7 +116,7 @@
             <response code="201">User created successfylly</response>
             <response code="400">Invalid input data</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.UserController.Update(System.Int32,PropertyManagement.Dtos.User.UserUpdateDto)">
+        <member name="M:PropertyManagement.Controllers.UserController.Update(System.Int32,PropertyManagement.BLL.Dtos.User.UserUpdateDto)">
             <summary>
             Update a user
             </summary>
@@ -136,7 +136,7 @@
             <response code="204">Delete successful</response>
             <response code="404">User not found</response>
         </member>
-        <member name="M:PropertyManagement.Controllers.UserController.Query(PropertyManagement.Validation.User.UserQueryParameters)">
+        <member name="M:PropertyManagement.Controllers.UserController.Query(PropertyManagement.BLL.Validation.User.UserQueryParameters)">
             <summary>
             Get paginated user
             </summary>
